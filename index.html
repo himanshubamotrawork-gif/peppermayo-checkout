@@ -15,12 +15,6 @@
             background-color: #f7f7f7; /* Off-white Shopify background to create depth against white sections */
             color: #111111;
         }
-        .brand-logo {
-            font-style: italic;
-            font-weight: 900;
-            font-size: 2.5rem;
-            letter-spacing: -2px;
-        }
         /* Realistic input styling to replicate real shop surfaces */
         .shopify-input-box {
             box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.06);
@@ -29,10 +23,13 @@
 </head>
 <body class="max-w-md mx-auto min-h-screen pb-12 bg-white shadow-2xl antialiased selection:bg-gray-200">
 
-    <!-- HEADER & EXPRESS CHECKOUT -->
+    <!-- HEADER & LOGO CONFIGURATION -->
     <header class="flex items-center justify-between px-4 py-4 border-b border-gray-300 bg-white">
         <div class="w-6"></div>
-        <h1 class="brand-logo text-center tracking-tighter text-black select-none">edikted</h1>
+        <div class="flex justify-center flex-grow">
+            <!-- Named strictly as logo-1.jpg for direct GitHub root mapping -->
+            <img src="logo-1.jpg" alt="Brand Logo" class="h-9 max-w-[200px] object-contain select-none">
+        </div>
         <button class="text-gray-800 focus:outline-none relative p-1">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
         </button>
@@ -94,7 +91,7 @@
         <div class="bg-white p-4 rounded-xl border border-gray-300 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
             <form class="space-y-3" onsubmit="event.preventDefault();">
                 <div class="relative border border-gray-400 rounded-md p-3 bg-white shopify-input-box">
-                    <label class="block text-xs text-gray-400 font-normal">Country/Region</label>
+                    <label class="block text-xs text-gray-500 font-medium">Country/Region</label>
                     <select class="w-full bg-transparent text-sm font-normal text-gray-900 focus:outline-none appearance-none pr-8 pt-0.5 font-medium">
                         <option selected>United States</option>
                     </select>
@@ -105,7 +102,7 @@
 
                 <div class="grid grid-cols-2 gap-3">
                     <div class="relative border border-gray-400 rounded-md p-3 bg-white shopify-input-box">
-                        <label class="block text-xs text-gray-400 font-normal">First name</label>
+                        <label class="block text-xs text-gray-500 font-normal">First name</label>
                         <input type="text" value="Raina" class="w-full bg-transparent text-sm font-semibold text-gray-900 focus:outline-none pt-0.5">
                     </div>
                     <div class="relative border border-gray-400 rounded-md p-3 bg-white shopify-input-box">
@@ -272,7 +269,7 @@
             </div>
         </div>
 
-        <!-- ORDER SUMMARY & CALC MATRIX -->
+        <!-- ORDER SUMMARY & CALC MATRIX WITH REINFORCED STRUCTURAL LINES -->
         <div class="bg-white p-4 rounded-xl border border-gray-300 shadow-[0_2px_8px_rgba(0,0,0,0.04)] space-y-6">
             <h3 class="text-lg font-bold text-gray-900 tracking-tight">Order summary</h3>
             
@@ -335,7 +332,7 @@
                 </div>
             </div>
 
-            <!-- PROMO CODE INTERACTIVE FIELD LAYER -->
+            <!-- PROMO CODE INTERACTIVE FIELD LAYER WITH ENHANCED SHADOW HOVER EFFECTS -->
             <div class="pb-6 border-b border-gray-300">
                 <!-- Applied Success Box -->
                 <div id="appliedBannerBox" class="hidden border border-gray-400 rounded-lg p-4 bg-white items-center justify-between shadow-[0_2px_10px_rgba(0,0,0,0.06)] mb-3">
@@ -355,17 +352,17 @@
                 </div>
             </div>
 
-            <!-- PRICING BREAKDOWN LOGIC MATRIX -->
+            <!-- PRICING BREAKDOWN LOGIC MATRIX WITH DEEP CONTRAST LABELS -->
             <div class="space-y-2.5 text-sm pb-5 border-b border-gray-300">
                 <div class="flex justify-between text-gray-700 font-medium">
                     <span>Subtotal · 3 items</span>
-                    <span id="subtotalDisplay" class="text-black font-semibold">$291.00</span>
+                    <span class="text-black font-semibold">$291.00</span>
                 </div>
                 
-                <!-- Red coupon dynamic entry row context -->
+                <!-- Red coupon dynamic entry row context matching image_f77eab.png requirements -->
                 <div id="summaryDiscountRow" class="hidden justify-between text-[#b91c1c] font-bold items-center">
                     <span>Discount Applied</span>
-                    <span>-$250.00</span>
+                    <span>-$257.20</span>
                 </div>
 
                 <div class="flex justify-between text-gray-700 font-medium items-center">
@@ -374,7 +371,7 @@
                 </div>
                 <div class="flex justify-between text-gray-700 font-medium items-center">
                     <span>Estimated taxes <i class="fa-regular fa-circle-question text-xs text-gray-400 ml-0.5"></i></span>
-                    <span id="taxDisplay" class="text-black font-semibold">$10.37</span>
+                    <span class="text-black font-semibold">$10.37</span>
                 </div>
             </div>
 
